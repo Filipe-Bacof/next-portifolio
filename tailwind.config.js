@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-background':
+          'linear-gradient(90deg, #3f66e6 0%, #3c16a4 100%)',
+      },
       colors: {
         metal: {
           50: '#636367',
@@ -47,6 +51,14 @@ module.exports = {
           900: '#123a54',
           950: '#0f3249',
         },
+        customBlue: {
+          100: '#3E43CA',
+          200: '#3c16a4',
+          300: '#03030f',
+        },
+      },
+      borderImage: {
+        'gradient-border': 'linear-gradient(180deg, #3f66e6, #3c16a4)',
       },
     },
   },

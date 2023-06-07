@@ -10,7 +10,7 @@ const barlow = Barlow({
 })
 
 export const metadata = {
-  title: 'Portifólio Filipe Bacof',
+  title: 'Filipe Bacof - Portifólio de Desenvolvedor',
   description:
     'Portfólio do Desenvolvedor Filipe Bacof. Saiba mais sobre mim, tecnologias que utilizo, projetos desenvolvidos e formas de entrar em contato.',
 }
@@ -18,7 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
-      <body className={barlow.className}>{children}</body>
+      <body className={`${barlow.className} bg-customBlue-300`}>
+        {children}
+      </body>
     </html>
   )
 }
