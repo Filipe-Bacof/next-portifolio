@@ -36,7 +36,7 @@ export const POST = async (req: NextRequest, _res: NextResponse) => {
         })
       })
     } catch (error) {
-      return NextResponse.json({ status: 422 })
+      return NextResponse.json({ status: 400 })
     }
 
     return NextResponse.json({ status: 200 })
