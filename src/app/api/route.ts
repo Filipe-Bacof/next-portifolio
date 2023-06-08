@@ -23,10 +23,14 @@ export const POST = async (req: NextRequest, _res: NextResponse) => {
       html: `<div>${message}</div><p>Responder para: ${email}</p>`,
     }
 
-    transporter.sendMail(mailData, function (err, info) {
-      if (err) console.log(err)
-      else console.log(info)
-    })
+    try {
+      transporter.sendMail(mailData, function (err, info) {
+        if (err) console.log(err)
+        else console.log(info)
+      })
+    } catch (error) {
+      return NextResponse.json({ status: 422 })
+    }
 
     return NextResponse.json({ status: 200 })
   } catch (error) {
