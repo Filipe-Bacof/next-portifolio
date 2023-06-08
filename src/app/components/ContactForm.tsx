@@ -17,7 +17,7 @@ export default function ContactForm() {
       message: message.value,
     }
     try {
-      const response = await fetch('/api', {
+      await fetch('/api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8',
@@ -25,7 +25,6 @@ export default function ContactForm() {
         body: JSON.stringify(details),
       })
 
-      console.log(response)
       setStatus('Enviado!!')
     } catch (error) {
       console.error(error)
