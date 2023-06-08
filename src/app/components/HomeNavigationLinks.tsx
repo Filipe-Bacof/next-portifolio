@@ -8,35 +8,40 @@ export default function HomeNavigationLinks() {
       <Link href={'/about'}>
         <Button
           text="Sobre Mim"
-          model="navigate"
+          color="blue"
+          size="lg"
           icon={<IconArrowRightShort />}
         />
       </Link>
       <Link href={'/contact'}>
         <Button
           text="Contato"
-          model="navigate"
+          color="blue"
+          size="lg"
           icon={<IconArrowRightShort />}
         />
       </Link>
       <Link href={'/projects'}>
         <Button
           text="Projetos"
-          model="navigate"
+          color="blue"
+          size="lg"
           icon={<IconArrowRightShort />}
         />
       </Link>
       <Link href={'/techs'}>
         <Button
           text="Tecnologias"
-          model="navigate"
+          color="blue"
+          size="lg"
           icon={<IconArrowRightShort />}
         />
       </Link>
       <Link href={'/oportunities'}>
         <Button
           text="Opotunidades"
-          model="navigate"
+          color="blue"
+          size="lg"
           icon={<IconArrowRightShort />}
         />
       </Link>

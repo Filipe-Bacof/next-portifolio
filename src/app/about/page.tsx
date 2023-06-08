@@ -7,7 +7,12 @@ export default function About() {
     <section className="">
       <h1>Um pouco sobre mim</h1>
       <Link href={'/'}>
-        <Button text="Voltar" model="return" icon={<IconArrowReturnLeft />} />
+        <Button
+          text="Voltar"
+          color="red"
+          size="sm"
+          icon={<IconArrowReturnLeft />}
+        />
       </Link>
     </section>
   )

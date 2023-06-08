@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <main className="mb-16 flex flex-col items-center justify-center">
       <div className="mb-4 flex flex-col items-center justify-center md:mb-0 md:flex-row">
-        <div className="flex flex-col items-center justify-center md:mb-12 md:flex-row">
-          <div className="flex flex-col items-center justify-center md:mt-16">
+        <div className="flex flex-col items-center justify-center md:mb-4 md:flex-row">
+          <div className="flex flex-col items-center justify-center md:mt-4">
             <HeaderPhoto />
             <ExclusiveTechRecruiters onlyForBigScreens={true} />
           </div>

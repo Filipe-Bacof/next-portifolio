@@ -6,8 +6,8 @@ function IconArrowReturnLeft(props: React.SVGProps<SVGSVGElement>) {
     <svg
       fill="currentColor"
       viewBox="0 0 16 16"
-      height="1em"
-      width="1em"
+      height="1.5em"
+      width="1.5em"
       {...props}
     >
       <path

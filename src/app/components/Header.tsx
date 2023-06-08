@@ -39,13 +39,13 @@ export default function Header() {
   return (
     <header className="mb-6 flex flex-col items-center justify-center md:mt-20 md:gap-5">
       <div className="mb-6 flex h-[139.97px] w-[329.65px] flex-col items-center justify-center">
-        <span className="mb-1 h-[35.99px] w-[238.87px] text-3xl text-white">
+        <span className="mb-1 h-[35.99px] w-[238.87px] cursor-default text-3xl text-white">
           {firstText}
         </span>
-        <h1 className="mb-1 h-[60px] w-[315.78px] bg-gradient-to-r from-[#3f66e6] to-[#3c16a4] bg-clip-text text-6xl font-extrabold text-transparent">
+        <h1 className="mb-1 h-[60px] w-[315.78px] cursor-default bg-gradient-to-r from-[#3f66e6] to-[#3c16a4] bg-clip-text text-6xl font-extrabold text-transparent">
           {secondText}
         </h1>
-        <h2 className="h-[35.99px] w-[329.64px] text-3xl text-gray-600">
+        <h2 className="h-[35.99px] w-[329.64px] cursor-default text-3xl text-gray-600">
           {thirdText}
         </h2>
       </div>

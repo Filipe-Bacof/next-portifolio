@@ -34,7 +34,7 @@ export default function ContactForm() {
 
   return (
     <div className="mt-6 flex flex-col items-center justify-center rounded-3xl bg-blue-950 pb-4">
-      <h2 className="px-8 py-4 text-lg font-extrabold text-white">
+      <h2 className="cursor-default px-8 py-4 text-lg font-extrabold text-white">
         Formulário de Contato
       </h2>
       <form
@@ -46,7 +46,7 @@ export default function ContactForm() {
             Nome:
           </label>
           <input
-            className="flex w-64 flex-row items-center justify-center rounded-2xl bg-customBlue-100 p-4 text-white duration-200 hover:bg-customBlue-200"
+            className="flex w-64 flex-row items-center justify-center rounded-2xl bg-customBlue-100 p-4 text-white outline-none duration-200 hover:bg-customBlue-200"
             type="text"
             id="name"
             required
@@ -58,7 +58,7 @@ export default function ContactForm() {
             Email:
           </label>
           <input
-            className="flex w-64 flex-row items-center justify-center rounded-2xl bg-customBlue-100 p-4 text-white duration-200 hover:bg-customBlue-200"
+            className="flex w-64 flex-row items-center justify-center rounded-2xl bg-customBlue-100 p-4 text-white outline-none duration-200 hover:bg-customBlue-200"
             type="email"
             id="email"
             required
@@ -71,20 +71,21 @@ export default function ContactForm() {
           </label>
           <textarea
             id="message"
-            className="flex h-[130px] w-64 flex-row items-center justify-center rounded-2xl bg-customBlue-100 p-4 text-white duration-200 hover:bg-customBlue-200"
+            className="flex h-[130px] max-h-48 w-64 resize-none flex-row items-center justify-center overflow-y-auto rounded-2xl bg-customBlue-100 p-4 text-white outline-none duration-200 hover:bg-customBlue-200"
             required
             placeholder="Digite sua mensagem aqui.."
           />
         </div>
         <Button
           text={status}
-          model={`${
+          color={`${
             status === 'Falhou!!'
-              ? 'return'
+              ? 'red'
               : status === 'Enviado!!'
-              ? 'success'
-              : 'navigate'
+              ? 'green'
+              : 'blue'
           }`}
+          size="lg"
           icon={<IconBxMailSend />}
         />
       </form>

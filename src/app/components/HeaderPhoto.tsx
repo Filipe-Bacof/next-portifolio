@@ -4,7 +4,7 @@ export default function HeaderPhoto() {
   return (
     <a
       className="m-8 h-[164px] w-[164px] no-underline"
-      href="https://github.com/Filipe-Bacof"
+      href="https://www.linkedin.com/in/filipe-bacof/"
       target="_blank"
       rel="noreferrer"
     >

@@ -7,7 +7,12 @@ export default function Contact() {
     <section className="">
       <h1>Entre em contato comigo</h1>
       <Link href={'/'}>
-        <Button text="Voltar" model="return" icon={<IconArrowReturnLeft />} />
+        <Button
+          text="Voltar"
+          color="red"
+          size="lg"
+          icon={<IconArrowReturnLeft />}
+        />
       </Link>
     </section>
   )

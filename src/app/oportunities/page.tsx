@@ -7,7 +7,12 @@ export default function Oportunities() {
     <section className="">
       <h1>Objetivos e Oportunidades</h1>
       <Link href={'/'}>
-        <Button text="Voltar" model="return" icon={<IconArrowReturnLeft />} />
+        <Button
+          text="Voltar"
+          color="red"
+          size="lg"
+          icon={<IconArrowReturnLeft />}
+        />
       </Link>
     </section>
   )

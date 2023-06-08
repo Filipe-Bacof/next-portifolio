@@ -7,7 +7,12 @@ export default function Techs() {
     <section className="">
       <h1>Tecnologias que utilizo</h1>
       <Link href={'/'}>
-        <Button text="Voltar" model="return" icon={<IconArrowReturnLeft />} />
+        <Button
+          text="Voltar"
+          color="red"
+          size="lg"
+          icon={<IconArrowReturnLeft />}
+        />
       </Link>
     </section>
   )
