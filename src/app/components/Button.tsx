@@ -9,12 +9,14 @@ type ButtonProps = {
 export default function Button({ text, model, icon }: ButtonProps) {
   return (
     <button
-      className={`m-2 flex w-64 flex-row items-center justify-center rounded p-4 duration-200 ${
+      className={`m-2 flex w-64 flex-row items-center justify-center rounded-full p-4 text-white duration-200 ${
         model === 'navigate' &&
-        'bg-customBlue-100 text-white hover:bg-customBlue-200'
-      } ${model === 'return' && 'bg-red-500 hover:bg-red-800'}`}
+        'bg-customBlue-100 text-lg hover:bg-customBlue-200'
+      } ${model === 'return' && 'bg-red-500 text-lg hover:bg-red-800'} ${
+        model === 'link' && 'bg-customBlue-100 text-sm hover:bg-customBlue-200'
+      }`}
     >
-      <span className="pr-2 text-lg font-bold">{text}</span>
+      <span className="pr-2 font-bold">{text}</span>
       {icon && icon}
     </button>
   )

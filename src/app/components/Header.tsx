@@ -1,7 +1,7 @@
 'use client'
 
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import HomeNavigationLinks from './HomeNavigationLinks'
 
 export default function Header() {
   const [firstText, setFirstText] = useState('')
@@ -37,31 +37,19 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="flex flex-col items-center justify-center">
-      <a
-        className="m-8 h-[164px] w-[164px] no-underline"
-        href="https://github.com/Filipe-Bacof"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div className="border-gradient-border h-[164px] w-[164px] items-center justify-center rounded-full bg-gradient-background transition-transform duration-300 hover:scale-110">
-          <Image
-            className="rounded-full pl-1 pt-1"
-            src="/profilepic.jpg"
-            alt="minha foto de perfil"
-            priority={false}
-            width={160}
-            height={160}
-          />
-        </div>
-      </a>
-      <div className="mb-6 flex flex-col items-center justify-center">
-        <span className="mb-1 text-3xl text-white">{firstText}</span>
-        <h1 className="mb-1 bg-gradient-to-r from-[#3f66e6] to-[#3c16a4] bg-clip-text text-6xl font-extrabold text-transparent">
+    <header className="flex flex-col items-center justify-center md:mt-20 md:gap-5">
+      <div className="mb-6 flex h-[139.97px] w-[329.65px] flex-col items-center justify-center">
+        <span className="mb-1 h-[35.99px] w-[238.87px] text-3xl text-white">
+          {firstText}
+        </span>
+        <h1 className="mb-1 h-[60px] w-[315.78px] bg-gradient-to-r from-[#3f66e6] to-[#3c16a4] bg-clip-text text-6xl font-extrabold text-transparent">
           {secondText}
         </h1>
-        <h2 className="text-3xl text-gray-600">{thirdText}</h2>
+        <h2 className="h-[35.99px] w-[329.64px] text-3xl text-gray-600">
+          {thirdText}
+        </h2>
       </div>
+      <HomeNavigationLinks />
     </header>
   )
 }
