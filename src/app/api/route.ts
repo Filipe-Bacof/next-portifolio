@@ -24,9 +24,16 @@ export const POST = async (req: NextRequest, _res: NextResponse) => {
     }
 
     try {
-      transporter.sendMail(mailData, function (err, info) {
-        if (err) console.log(err)
-        else console.log(info)
+      await new Promise<void>((resolve, reject) => {
+        transporter.sendMail(mailData, function (err, info) {
+          if (err) {
+            console.error('Error sending email:', err)
+            reject(err)
+          } else {
+            console.log('Email sent successfully:', info)
+            resolve()
+          }
+        })
       })
     } catch (error) {
       return NextResponse.json({ status: 422 })
