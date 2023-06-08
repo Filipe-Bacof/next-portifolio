@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 type ButtonProps = {
   text: string
-  model: 'link' | 'github' | 'deploy' | 'navigate' | 'return'
+  model: 'link' | 'github' | 'deploy' | 'navigate' | 'return' | 'success'
   icon?: ReactNode
 }
 
@@ -14,7 +14,7 @@ export default function Button({ text, model, icon }: ButtonProps) {
         'bg-customBlue-100 text-lg hover:bg-customBlue-200'
       } ${model === 'return' && 'bg-red-500 text-lg hover:bg-red-800'} ${
         model === 'link' && 'bg-customBlue-100 text-sm hover:bg-customBlue-200'
-      }`}
+      } ${model === 'success' && 'bg-green-500 text-lg hover:bg-green-800'}`}
     >
       <span className="pr-2 font-bold">{text}</span>
       {icon && icon}
