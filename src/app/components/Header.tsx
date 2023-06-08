@@ -37,7 +37,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="flex flex-col items-center justify-center md:mt-20 md:gap-5">
+    <header className="mb-6 flex flex-col items-center justify-center md:mt-20 md:gap-5">
       <div className="mb-6 flex h-[139.97px] w-[329.65px] flex-col items-center justify-center">
         <span className="mb-1 h-[35.99px] w-[238.87px] text-3xl text-white">
           {firstText}
