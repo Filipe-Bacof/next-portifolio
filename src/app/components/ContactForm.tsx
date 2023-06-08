@@ -50,7 +50,7 @@ export default function ContactForm() {
             type="text"
             id="name"
             required
-            placeholder="Seu nome.."
+            placeholder="Como posso chamar você?"
           />
         </div>
         <div className="flex flex-col p-2">
@@ -62,7 +62,7 @@ export default function ContactForm() {
             type="email"
             id="email"
             required
-            placeholder="Seu Email.."
+            placeholder="Seu melhor email"
           />
         </div>
         <div className="mb-2 flex flex-col p-2">
@@ -73,7 +73,7 @@ export default function ContactForm() {
             id="message"
             className="flex h-[130px] max-h-48 w-64 resize-none flex-row items-center justify-center overflow-y-auto rounded-2xl bg-customBlue-100 p-4 text-white outline-none duration-200 hover:bg-customBlue-200"
             required
-            placeholder="Digite sua mensagem aqui.."
+            placeholder="Digite sua mensagem aqui..."
           />
         </div>
         <Button

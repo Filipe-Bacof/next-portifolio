@@ -1,7 +1,7 @@
 import Button from './Button'
 import IconBxsMedal from './icons/IconBxsMedal'
 import IconDownload from './icons/IconDownload'
-import IconGithub from './icons/IconGithub'
+import IconLinkedin from './icons/IconLinkedin'
 import IconWhatsApp from './icons/IconWhatsApp'
 
 type ExclusiveTechRecruitersProps = {
@@ -45,11 +45,11 @@ export default function ExclusiveTechRecruiters({
         // LINK TEMPORÁRIO, CRIAR UMA PÁGINA AQUI NO NEXT MAIS PROFISSIONAL
       />
       <Button
-        text="Ver Repositório deste Portifólio"
+        text="Ver meu LinkedIn"
         color="blue"
         size="sm"
-        icon={<IconGithub />}
-        linkhref="https://github.com/Filipe-Bacof/next-portifolio"
+        icon={<IconLinkedin />}
+        linkhref="https://www.linkedin.com/in/filipe-bacof/"
       />
       <Button
         text="Me chame no WhatsApp"
