@@ -4,8 +4,10 @@ import IconArrowReturnLeft from '../components/icons/IconArrowReturnLeft'
 
 export default function Contact() {
   return (
-    <section className="">
-      <h1>Entre em contato comigo</h1>
+    <section className="flex flex-col items-center">
+      <h1 className="text-4xl font-extrabold text-white">
+        Entre em contato comigo
+      </h1>
       <Link href={'/'}>
         <Button
           text="Voltar"

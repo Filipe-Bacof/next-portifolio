@@ -4,8 +4,10 @@ import IconArrowReturnLeft from '../components/icons/IconArrowReturnLeft'
 
 export default function Techs() {
   return (
-    <section className="">
-      <h1>Tecnologias que utilizo</h1>
+    <section className="flex flex-col items-center">
+      <h1 className="text-4xl font-extrabold text-white">
+        Tecnologias que utilizo
+      </h1>
       <Link href={'/'}>
         <Button
           text="Voltar"

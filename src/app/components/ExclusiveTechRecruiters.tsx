@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from './Button'
 import IconBxsMedal from './icons/IconBxsMedal'
 import IconDownload from './icons/IconDownload'
@@ -36,14 +37,14 @@ export default function ExclusiveTechRecruiters({
         icon={<IconDownload />}
         linkhref="https://github.com/Filipe-Bacof/portifolio-filipe/raw/master/public/resume-filipe-bacof.pdf"
       />
-      <Button
-        text="Ver os meus certificados"
-        color="blue"
-        size="sm"
-        icon={<IconBxsMedal />}
-        linkhref="https://filipe-bacof.github.io/Meus-Certificados/"
-        // LINK TEMPORÁRIO, CRIAR UMA PÁGINA AQUI NO NEXT MAIS PROFISSIONAL
-      />
+      <Link href={'/certificates'}>
+        <Button
+          text="Ver os meus certificados"
+          color="blue"
+          size="sm"
+          icon={<IconBxsMedal />}
+        />
+      </Link>
       <Button
         text="Ver meu LinkedIn"
         color="blue"
