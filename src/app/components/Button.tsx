@@ -35,12 +35,12 @@ export default function Button({
 
   return linkhref && linkhref.length > 0 ? (
     <a href={linkhref} target="_blank" className={btnclasses} rel="noreferrer">
-      <span className="pr-2 font-bold">{text}</span>
+      <span className="pr-2 font-bold capitalize">{text}</span>
       {icon && icon}
     </a>
   ) : (
     <button className={btnclasses}>
-      <span className="pr-2 font-bold">{text}</span>
+      <span className="pr-2 font-bold capitalize">{text}</span>
       {icon && icon}
     </button>
   )
