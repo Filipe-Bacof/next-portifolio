@@ -8,6 +8,9 @@ import IconSpotify from '../components/icons/IconSpotify'
 import IconRocketLaunch from '../components/icons/IconRocketLauch'
 import IconWhatsApp from '../components/icons/IconWhatsApp'
 import ContactForm from '../components/ContactForm'
+import IconEmailOutline from '../components/icons/IconEmailOutline'
+import IconPhone from '../components/icons/IconPhone'
+import IconLocationPoint from '../components/icons/IconLocationPoint'
 
 export default function Contact() {
   const socialNetworks = [
@@ -62,6 +65,63 @@ export default function Contact() {
             rounded="rounded"
           />
         ))}
+      </div>
+      <div className="my-4 flex w-[374.74px] flex-col gap-3 rounded bg-blue-950 p-2">
+        <div className="flex flex-row gap-3">
+          <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
+            <span className="text-lg text-rose-600">
+              <IconPhone />
+            </span>
+          </div>
+          <div>
+            <h2 className="text-gray-500">Telefone:</h2>
+            <h3 className="text-white">&#40;51&#41; 99445-6865</h3>
+          </div>
+        </div>
+        <div className="flex flex-row gap-3">
+          <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
+            <span className="text-lg text-sky-400">
+              <IconEmailOutline />
+            </span>
+          </div>
+          <div>
+            <h2 className="text-gray-500">E-mail:</h2>
+            <h3 className="text-white">filipebacof@gmail.com</h3>
+          </div>
+        </div>
+        <div className="flex flex-row gap-3">
+          <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
+            <span className="text-lg text-purple-800">
+              <IconLocationPoint />
+            </span>
+          </div>
+          <div>
+            <h2 className="text-gray-500">Localização:</h2>
+            <h3 className="text-white">Sapucaia do Sul - RS</h3>
+          </div>
+        </div>
+        <div className="flex flex-row gap-3">
+          <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
+            <span className="text-lg text-blue-600">
+              <IconLocationPoint />
+            </span>
+          </div>
+          <div>
+            <h2 className="text-gray-500">Formação Acadêmica:</h2>
+            <h3 className="text-white">Engenharia de Software - Unicesumar</h3>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-row gap-3">
+        <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
+          <span className="text-lg text-green-500">
+            <IconWhatsApp />
+          </span>
+        </div>
+        <div>
+          <h2 className="text-gray-500">Telefone:</h2>
+          <h3 className="text-white">&#40;51&#41; 99445-6865</h3>
+        </div>
       </div>
       <Button
         text="Me chame no WhatsApp"
