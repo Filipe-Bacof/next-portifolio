@@ -57,7 +57,7 @@ export default function ExclusiveTechRecruiters({
         color="blue"
         size="sm"
         icon={<IconWhatsApp />}
-        linkhref="https://wa.me/5551994456865?text=Ol%C3%A1%2C+adorei+o+seu+portif%C3%B3lio+online%2C+vamos+conversar%3F"
+        linkhref="https://api.whatsapp.com/send?phone=5551994456865&text=Ol%C3%A1%2C%20adorei%20o%20seu%20portif%C3%B3lio%20online%2C%20vamos%20conversar%3F"
       />
     </div>
   )

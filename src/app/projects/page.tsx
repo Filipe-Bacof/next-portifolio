@@ -124,7 +124,7 @@ export default function Projects() {
 
   return (
     <section className="flex flex-col items-center">
-      <h1 className="text-4xl font-extrabold text-white">Meus Projetos</h1>
+      <h1 className="my-4 text-4xl font-extrabold text-white">Meus Projetos</h1>
       <div className="flex w-80 flex-col items-center bg-blue-950 p-4">
         <h3 className="text-2xl text-white">
           Clique para ver aleatóriamente um dos projetos que eu desenvolvi
@@ -156,7 +156,7 @@ export default function Projects() {
         </p>
       </div>
 
-      <Link href={'/'}>
+      <Link className="my-4" href={'/'}>
         <Button
           text="Voltar"
           color="red"
