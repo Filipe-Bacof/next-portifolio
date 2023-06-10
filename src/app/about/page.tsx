@@ -4,11 +4,11 @@ import IconArrowReturnLeft from '../components/icons/IconArrowReturnLeft'
 
 export default function About() {
   return (
-    <section className="flex flex-col items-center">
+    <section className="mx-auto flex w-[90vw] flex-col items-center justify-center">
       <h1 className="my-4 text-center text-4xl font-extrabold text-white">
         Um pouco sobre mim
       </h1>
-      <div className="flex w-[400px] flex-col gap-4 text-justify text-white">
+      <div className="flex flex-col items-center justify-center gap-4 px-4 text-justify text-white">
         <p>
           Isso é o que está no portifólio antigo, irei reescrever e reformular
           esta seção inteira!!!!
