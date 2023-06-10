@@ -1,5 +1,5 @@
 import Button from './Button'
-import IconTailwind from './icons/IconTailwind'
+import { IconTailwind } from './icons/IconsTechs'
 
 export default function Emphasis() {
   return (
