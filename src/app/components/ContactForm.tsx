@@ -10,10 +10,12 @@ export default function ContactForm() {
     e.preventDefault()
     setStatus('Enviando...')
 
-    const { name, email, message }: any = e.currentTarget
+    const { name, email, phone, subject, message }: any = e.currentTarget
     const details = {
       name: name.value,
       email: email.value,
+      phone: phone.value,
+      subject: subject.value,
       message: message.value,
     }
     try {
@@ -49,7 +51,6 @@ export default function ContactForm() {
             className="flex w-64 flex-row items-center justify-center rounded-2xl bg-customBlue-100 p-4 text-white outline-none duration-200 hover:bg-customBlue-200"
             type="text"
             id="name"
-            required
             placeholder="Como posso chamar você?"
           />
         </div>
@@ -61,13 +62,34 @@ export default function ContactForm() {
             className="flex w-64 flex-row items-center justify-center rounded-2xl bg-customBlue-100 p-4 text-white outline-none duration-200 hover:bg-customBlue-200"
             type="email"
             id="email"
-            required
             placeholder="Seu melhor email"
+          />
+        </div>
+        <div className="flex flex-col p-2">
+          <label htmlFor="phone" id="labeltext" className="text-white">
+            Telefone:
+          </label>
+          <input
+            className="flex w-64 flex-row items-center justify-center rounded-2xl bg-customBlue-100 p-4 text-white outline-none duration-200 hover:bg-customBlue-200"
+            type="tel"
+            id="phone"
+            placeholder="Seu telefone"
+          />
+        </div>
+        <div className="flex flex-col p-2">
+          <label htmlFor="subject" id="labeltext" className="text-white">
+            Assunto:
+          </label>
+          <input
+            className="flex w-64 flex-row items-center justify-center rounded-2xl bg-customBlue-100 p-4 text-white outline-none duration-200 hover:bg-customBlue-200"
+            type="text"
+            id="subject"
+            placeholder="Assunto relacionado"
           />
         </div>
         <div className="mb-2 flex flex-col p-2">
           <label htmlFor="message" id="labeltext" className="text-white">
-            Mensagem:
+            Mensagem: &#40;obrigatório&#41;
           </label>
           <textarea
             id="message"

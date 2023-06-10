@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer'
 
 export const POST = async (req: NextRequest, _res: NextResponse) => {
   try {
-    const { name, email, message } = await req.json()
+    const { name, email, phone, subject, message } = await req.json()
 
     const transporter = nodemailer.createTransport({
       port: 465,
@@ -18,9 +18,27 @@ export const POST = async (req: NextRequest, _res: NextResponse) => {
     const mailData = {
       from: process.env.GMAIL_USER,
       to: 'filipebacof@gmail.com',
-      subject: `Nome: ${name}`,
-      text: message + ' | Enviado De: ' + email,
-      html: `<div>${message}</div><p>Responder para: ${email}</p>`,
+      subject:
+        subject ||
+        (name && `${name} - Contato via portifólio`) ||
+        'Contato via portifólio',
+      text: `${message} | ${name ? 'Nome: ' + name : 'Não informou o nome'} | ${
+        email ? 'Email: ' + email : 'Não informou o e-mail'
+      } | ${phone ? 'Telefone: ' + phone : 'Não informou o telefone'}`,
+      html: `<div>
+      ${name ? '<h1>Nome: ' + name + '</h1>' : '<h1>Nome não informado</h1>'}
+      ${
+        email
+          ? '<h2>E-mail: ' + email + '</h2>'
+          : '<h2>E-mail não informado</h2>'
+      }
+      ${
+        phone
+          ? '<h2>Telefone: ' + phone + '</h2>'
+          : '<h2>Telefone não informado</h2>'
+      }
+      <p>${message}</p>
+      </div>`,
     }
 
     try {
