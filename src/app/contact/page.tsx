@@ -11,6 +11,7 @@ import ContactForm from '../components/ContactForm'
 import IconEmailOutline from '../components/icons/IconEmailOutline'
 import IconPhone from '../components/icons/IconPhone'
 import IconLocationPoint from '../components/icons/IconLocationPoint'
+import IconSchool from '../components/icons/IconSchool'
 
 export default function Contact() {
   const socialNetworks = [
@@ -46,83 +47,76 @@ export default function Contact() {
     },
   ]
 
+  const infoData = [
+    {
+      name: 'Telefone',
+      value: '(51) 99445-6865',
+      icon: <IconPhone />,
+      color: 'text-rose-600',
+    },
+    {
+      name: 'E-mail',
+      value: 'filipebacof@gmail.com',
+      icon: <IconEmailOutline />,
+      color: 'text-sky-400',
+    },
+    {
+      name: 'Localização',
+      value: 'Sapucaia do Sul - RS',
+      icon: <IconLocationPoint />,
+      color: 'text-purple-800',
+    },
+    {
+      name: 'Formação Acadêmica',
+      value: 'Engenharia de Software',
+      icon: <IconSchool />,
+      color: 'text-blue-600',
+    },
+  ]
+
   return (
     <section className="flex flex-col items-center">
       <h1 className="my-4 text-4xl font-extrabold text-white">
-        Entre em contato comigo
+        Entre em contato
       </h1>
-      <div className="flex flex-row rounded bg-blue-950">
+      <h2 className="text-3xl font-extrabold text-gray-500 md:hidden">
+        Minhas Redes Sociais
+      </h2>
+      <div className="my-4 flex max-w-[90vw] flex-col items-center rounded bg-blue-950 md:flex-row">
         {socialNetworks.map((network) => (
           <Button
             key={network.name}
             text={network.name}
             color="transparent"
-            size="lg"
+            size="sm"
             icon={network.icon}
             iconColor={network.color}
-            onlyIcon={true}
+            onlyIcon={false}
             linkhref={network.link}
             rounded="rounded"
           />
         ))}
       </div>
-      <div className="my-4 flex w-[374.74px] flex-col gap-3 rounded bg-blue-950 p-2">
-        <div className="flex flex-row gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
-            <span className="text-lg text-rose-600">
-              <IconPhone />
-            </span>
+      <h2 className="my-4 text-3xl font-extrabold text-gray-500 md:hidden">
+        Dados Pessoais
+      </h2>
+      <div className="mb-4 flex w-[90vw] max-w-[272px] flex-col gap-3 rounded bg-blue-950 p-2 md:max-w-[90vw] md:flex-row md:justify-around">
+        {infoData.map((oneInfo) => (
+          <div
+            key={oneInfo.value}
+            className="flex flex-row flex-wrap gap-3 md:min-w-[170px] md:flex-col md:items-center"
+          >
+            <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50 md:min-w-[90%]">
+              <span className={`text-lg ${oneInfo.color}`}>{oneInfo.icon}</span>
+            </div>
+            <div className="flex flex-col items-center md:gap-1">
+              <h2 className="text-gray-500">{oneInfo.name}:</h2>
+              <h3 className="text-white">{oneInfo.value}</h3>
+            </div>
           </div>
-          <div>
-            <h2 className="text-gray-500">Telefone:</h2>
-            <h3 className="text-white">&#40;51&#41; 99445-6865</h3>
-          </div>
-        </div>
-        <div className="flex flex-row gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
-            <span className="text-lg text-sky-400">
-              <IconEmailOutline />
-            </span>
-          </div>
-          <div>
-            <h2 className="text-gray-500">E-mail:</h2>
-            <h3 className="text-white">filipebacof@gmail.com</h3>
-          </div>
-        </div>
-        <div className="flex flex-row gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
-            <span className="text-lg text-purple-800">
-              <IconLocationPoint />
-            </span>
-          </div>
-          <div>
-            <h2 className="text-gray-500">Localização:</h2>
-            <h3 className="text-white">Sapucaia do Sul - RS</h3>
-          </div>
-        </div>
-        <div className="flex flex-row gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
-            <span className="text-lg text-blue-600">
-              <IconLocationPoint />
-            </span>
-          </div>
-          <div>
-            <h2 className="text-gray-500">Formação Acadêmica:</h2>
-            <h3 className="text-white">Engenharia de Software - Unicesumar</h3>
-          </div>
-        </div>
+        ))}
       </div>
-      <div className="flex flex-row gap-3">
-        <div className="flex h-12 w-12 items-center justify-center rounded bg-customBlue-300 p-2 hover:bg-black/50">
-          <span className="text-lg text-green-500">
-            <IconWhatsApp />
-          </span>
-        </div>
-        <div>
-          <h2 className="text-gray-500">Telefone:</h2>
-          <h3 className="text-white">&#40;51&#41; 99445-6865</h3>
-        </div>
-      </div>
+
       <Button
         text="Me chame no WhatsApp"
         color="blue"
