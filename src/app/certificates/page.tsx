@@ -17,10 +17,10 @@ export default function Certificates() {
   const [slidePerView, setSlidePerView] = useState(2)
   const data = [
     {
-      id: 101,
+      id: 116,
       image:
-        'https://github.com/Filipe-Bacof/Meus-Certificados/blob/main/images/b7web-javascript.jpg?raw=true',
-      alt: 'JavaScript B7web',
+        'https://github.com/Filipe-Bacof/Meus-Certificados/blob/main/images/udemy-cod3r-nextjs.jpg?raw=true',
+      alt: 'NextJS - Aprenda com Projetos - Cod3r',
     },
     {
       id: 113,
@@ -93,6 +93,12 @@ export default function Certificates() {
       image:
         'https://github.com/Filipe-Bacof/Meus-Certificados/blob/main/images/solides-empregabilidade.png?raw=true',
       alt: 'Solides Empregabilidade',
+    },
+    {
+      id: 101,
+      image:
+        'https://github.com/Filipe-Bacof/Meus-Certificados/blob/main/images/b7web-javascript.jpg?raw=true',
+      alt: 'JavaScript B7web',
     },
     {
       id: 102,
