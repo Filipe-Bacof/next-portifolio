@@ -15,7 +15,6 @@ register()
 
 export default function Certificates() {
   const [slidePerView, setSlidePerView] = useState(2)
-  const [isMobile, setIsMobile] = useState(false)
   const data = [
     {
       id: 101,
@@ -113,16 +112,8 @@ export default function Certificates() {
     function handleResize() {
       if (window.innerWidth > 860) {
         setSlidePerView(2)
-        setIsMobile(false)
-      } else if (
-        window.innerWidth < 860 &&
-        window.innerWidth > window.innerHeight
-      ) {
-        setSlidePerView(1)
-        setIsMobile(false)
       } else {
         setSlidePerView(1)
-        setIsMobile(true)
       }
     }
     handleResize()
@@ -151,11 +142,7 @@ export default function Certificates() {
               <img
                 src={item.image}
                 alt={item.alt}
-                className={`w-full object-cover p-4 pb-10 ${
-                  slidePerView === 2 && 'h-[450px]'
-                } ${
-                  slidePerView === 1 && !isMobile ? 'h-[550px]' : 'h-[350px]'
-                }`}
+                className={`w-full object-cover px-2`}
               />
             </picture>
           </SwiperSlide>
