@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body className={`${barlow.className} bg-customBlue-300 md:h-full`}>
-        <header className="fixed flex h-16 w-full flex-row items-center justify-around bg-customBlue-400 md:justify-center md:gap-4 lg:gap-8">
+        <header className="fixed z-50 flex h-16 w-full flex-row items-center justify-around bg-customBlue-400 md:justify-center md:gap-4 lg:gap-8">
           <Link href={'/'}>
             <Image
               className="cursor-pointer rounded-full"
@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             />
           </picture>
         </header>
-        <div className="fixed mt-16 h-[2px] w-full bg-gradient-background"></div>
+        <div className="fixed z-50 mt-16 h-[2px] w-full bg-gradient-background"></div>
         <main className="pt-[66px]">{children}</main>
       </body>
     </html>
