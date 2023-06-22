@@ -13,7 +13,7 @@ export default function Oportunities() {
       pictureURL: 'https://avatars.githubusercontent.com/mahlignus',
       linkedinURL: 'https://www.linkedin.com/in/rafaelmahl/',
       companyWebsiteURL: 'https://zallpy.com',
-      text: 'Booooa, meu consagrado! Esse foguete aí vai pra lua, já falei. Num período de tempo curtíssimo vi tu sair de pequenos joguinhos da memória em JavaScript pra projetos super bem feitos, com o máximo de cuidado e atenção aos detalhes. Tu tá de parabéns por todo o teu empenho e dedicação aos estudos, dá pra ver que tem amor mesmo pelo que faz.',
+      text: 'O foguete Filipe Bacof não posso nem dizer que vai pra lua, porque decolou tão rápido que vai alcançar outras galáxias. Estava em uma busca incansável por conhecimento, parecia que estava respirando código, pois era da madrugada até a noite mandando links de novos projetos ou de fontes de estudo. E o melhor de tudo é ver que essa dedicação e esse empenho todo deram muito resultado. Em pouco tempo ele conseguiu se tornar um profissional incrível. Me vi de queixo caído nos últimos projetos que ele me enviou pela qualidade e cuidado dos mesmos. Certamente é um programador que ama o que faz e que não foge de nenhum desafio. P.S.: ele faz os melhores arquivos readme. Além de tomar todo o cuidado com o código, também faz questão de deixar tudo documentado da melhor forma possível.',
     },
     {
       id: '2',
@@ -39,7 +39,7 @@ export default function Oportunities() {
   ]
 
   return (
-    <section className="mx-auto flex w-[90vw] flex-col items-center justify-center">
+    <section className="mx-auto flex w-[90vw] flex-col items-center justify-center md:max-w-[900px]">
       <h1 className="my-4 text-center text-4xl font-extrabold text-white">
         Objetivos e Oportunidades
       </h1>
