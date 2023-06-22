@@ -6,6 +6,7 @@ import Icon from './icon.png'
 import HomeNavigationLinksMedium from './components/HomeNavigationLinksMedium'
 // import HomeNavigationLinksMobile from './components/HomeNavigationLinksMobile'
 import Link from 'next/link'
+import IconMenu from './components/icons/IconMenu'
 
 const barlow = Barlow({
   weight: ['200', '400', '800'],
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </Link>
           <HomeNavigationLinksMedium />
           {/* <HomeNavigationLinksMobile /> */}
+          <IconMenu className="cursor-pointer text-2xl text-white md:hidden" />
           <picture>
             <img
               src="./flags-icons/portuguese.svg"
