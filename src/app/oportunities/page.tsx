@@ -18,7 +18,7 @@ export default function Oportunities() {
     {
       id: '2',
       name: 'José Mário Reisswitz',
-      role: 'Engenheiro Backend',
+      role: 'Engenheiro Backend Techlead',
       company: 'Axur',
       pictureURL: 'https://avatars.githubusercontent.com/jmreisswitz',
       linkedinURL:
