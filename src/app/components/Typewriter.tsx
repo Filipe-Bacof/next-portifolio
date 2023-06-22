@@ -1,9 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import HomeNavigationLinks from './HomeNavigationLinks'
 
-export default function Header() {
+export default function Typewriter() {
   const [firstText, setFirstText] = useState('')
   const [secondText, setSecondText] = useState('')
   const [thirdText, setThirdText] = useState('')
@@ -37,19 +36,18 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="mb-6 flex flex-col items-center justify-center md:my-4 md:gap-5">
-      <div className="mb-6 flex h-[139.97px] w-[329.65px] flex-col items-center justify-center">
-        <span className="mb-1 h-[35.99px] w-[238.87px] cursor-default text-3xl text-white">
+    <section className="flex flex-col items-center justify-center">
+      <div className="flex h-[139.97px] w-[329.65px] flex-col items-center justify-center gap-1">
+        <span className="h-[35.99px] w-[238.87px] cursor-default text-3xl text-white">
           {firstText}
         </span>
-        <h1 className="mb-1 h-[60px] w-[315.78px] cursor-default bg-gradient-to-r from-[#3f66e6] to-[#3c16a4] bg-clip-text text-6xl font-extrabold text-transparent">
+        <h1 className="h-[60px] w-[315.78px] cursor-default bg-gradient-to-r from-[#3f66e6] to-[#3c16a4] bg-clip-text text-6xl font-extrabold text-transparent">
           {secondText}
         </h1>
         <h2 className="h-[35.99px] w-[329.64px] cursor-default text-3xl text-gray-600">
           {thirdText}
         </h2>
       </div>
-      <HomeNavigationLinks />
-    </header>
+    </section>
   )
 }

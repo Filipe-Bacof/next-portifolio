@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-export default function HeaderPhoto() {
+export default function ProfilePicHome() {
   return (
     <a
-      className="m-8 h-[164px] w-[164px] no-underline md:mx-auto md:my-4"
+      className="h-[164px] w-[164px] no-underline"
       href="https://www.linkedin.com/in/filipe-bacof/"
       target="_blank"
       rel="noreferrer"

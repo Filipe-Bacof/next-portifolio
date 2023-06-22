@@ -2,9 +2,9 @@ import Link from 'next/link'
 import Button from './Button'
 import IconArrowRightShort from './icons/IconArrowRightShort'
 
-export default function HomeNavigationLinks() {
+export default function HomeNavigationLinksMobile() {
   return (
-    <nav className="flex flex-col">
+    <nav className="flex flex-col items-center justify-center text-lg font-bold text-blue-900 md:hidden">
       <Link href={'/about'}>
         <Button
           text="Sobre Mim"
@@ -46,5 +46,32 @@ export default function HomeNavigationLinks() {
         />
       </Link>
     </nav>
+    // <select className="items-center justify-center text-lg font-bold text-blue-900 md:hidden">
+    //   <option>
+    //     <Link href={'/about'}>
+    //       <span>Sobre Mim</span>
+    //     </Link>
+    //   </option>
+    //   <option>
+    //     <Link href={'/contact'}>
+    //       <span>Contato</span>
+    //     </Link>
+    //   </option>
+    //   <option>
+    //     <Link href={'/projects'}>
+    //       <span>Projetos</span>
+    //     </Link>
+    //   </option>
+    //   <option>
+    //     <Link href={'/techs'}>
+    //       <span>Tecnologias</span>
+    //     </Link>
+    //   </option>
+    //   <option>
+    //     <Link href={'/oportunities'}>
+    //       <span>Oportunidades</span>
+    //     </Link>
+    //   </option>
+    // </select>
   )
 }
