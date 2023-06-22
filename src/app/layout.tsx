@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </Link>
           <HomeNavigationLinksMedium />
           {/* <HomeNavigationLinksMobile /> */}
-          <IconMenu className="cursor-pointer text-2xl text-white md:hidden" />
+          <IconMenu className="cursor-pointer text-2xl text-blue-900 md:hidden" />
           <picture>
             <img
               src="./flags-icons/portuguese.svg"
