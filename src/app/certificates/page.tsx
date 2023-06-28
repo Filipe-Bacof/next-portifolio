@@ -53,6 +53,12 @@ export default function Certificates() {
       alt: 'RocketSeat Discover Especializar 3',
     },
     {
+      id: 117,
+      image:
+        'https://github.com/Filipe-Bacof/Meus-Certificados/blob/main/images/DevStack-Summit.png?raw=true',
+      alt: 'DevStack Summit',
+    },
+    {
       id: 103,
       image:
         'https://github.com/Filipe-Bacof/Meus-Certificados/blob/main/images/kenzie-amazonia.jpg?raw=true',
